@@ -15,7 +15,10 @@
  */
 
 
-body { padding-top: 50px; }
+body { 
+	padding-top: 50px; 
+	background-color: #A3A3C2;
+}
 footer { margin-top: 100px; }
 table, td, th { vertical-align: middle; border: none; }
 th { border-bottom: 1px solid #DDD; }

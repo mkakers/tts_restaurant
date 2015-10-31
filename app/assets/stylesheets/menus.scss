@@ -3,7 +3,9 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .crop {
-width: 500px;
-height: 500px;
-overflow: hidden;
+  object-fit: none; /* Do not scale the image */
+  object-position: center; /* Center the image within the element */
+  height: 300px;
+  width: 300px;
+  overflow: hidden;
 }

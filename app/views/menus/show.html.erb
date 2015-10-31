@@ -1,24 +1,17 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Item:</strong>
-  <%= @menu.item %>
-</p>
+<div class="thumbnail">
+      <!-- <li class="crop"> -->
+        <img src="<%= @menu.image %>">
+      <!-- </li> -->
+        <div class= "caption">
+          <h3><%= @menu.item %></h3>
+          <h4>Cost: $<%= @menu.cost %></h4>
+          <h4>Ingredients: <%= @menu.ingredients%></h4>
 
-<p>
-  <strong>Cost:</strong>
-  <%= @menu.cost %>
-</p>
+        </div>
 
-<p>
-  <strong>Ingredients:</strong>
-  <%= @menu.ingredients %>
-</p>
-
-<p>
-  <strong>Image:</strong>
-  <%= @menu.image %>
-</p>
+    </div>
 
 <%= link_to 'Edit', edit_menu_path(@menu) %> |
 <%= link_to 'Back', menus_path %>
