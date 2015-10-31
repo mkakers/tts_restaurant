@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Our Locations</h1>
+
+
+<div class="row">
+<% @locations.each do |location| %>
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <!-- <li class="crop"> -->
+        <img src="<%= location.image %>">
+      <!-- </li> -->
+        <div class= "caption">
+          <h3><%= location.address %></h3>
+          <h4>Hours: <br><%= location.hours %></h4>
+          <%= link_to "More Info", location, class: "btn btn-default" %>
+
+        </div>
+
+    </div>
+
+  </div>
+  <% end %>
+
+</div>
+
+<br>
+
+<%= link_to 'New Location', new_location_path, class: "btn btn-primary" %>
